@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46763042299C3324009062F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46763041299C3324009062F8 /* AppDelegate.swift */; };
+		46763044299C3324009062F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46763043299C3324009062F8 /* SceneDelegate.swift */; };
+		46763046299C3324009062F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46763045299C3324009062F8 /* ViewController.swift */; };
+		46763049299C3324009062F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46763047299C3324009062F8 /* Main.storyboard */; };
+		4676304B299C3326009062F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4676304A299C3326009062F8 /* Assets.xcassets */; };
+		4676304E299C3326009062F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4676304C299C3326009062F8 /* LaunchScreen.storyboard */; };
+		46763059299C3326009062F8 /* MagicalDeckBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46763058299C3326009062F8 /* MagicalDeckBuilderTests.swift */; };
+		46763063299C3326009062F8 /* MagicalDeckBuilderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46763062299C3326009062F8 /* MagicalDeckBuilderUITests.swift */; };
+		46763065299C3326009062F8 /* MagicalDeckBuilderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46763064299C3326009062F8 /* MagicalDeckBuilderUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		46763055299C3326009062F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46763036299C3324009062F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4676303D299C3324009062F8;
+			remoteInfo = MagicalDeckBuilder;
+		};
+		4676305F299C3326009062F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46763036299C3324009062F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4676303D299C3324009062F8;
+			remoteInfo = MagicalDeckBuilder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4676303E299C3324009062F8 /* MagicalDeckBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicalDeckBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46763041299C3324009062F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		46763043299C3324009062F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		46763045299C3324009062F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		46763048299C3324009062F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4676304A299C3326009062F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4676304D299C3326009062F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4676304F299C3326009062F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46763054299C3326009062F8 /* MagicalDeckBuilderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicalDeckBuilderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46763058299C3326009062F8 /* MagicalDeckBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicalDeckBuilderTests.swift; sourceTree = "<group>"; };
+		4676305E299C3326009062F8 /* MagicalDeckBuilderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicalDeckBuilderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46763062299C3326009062F8 /* MagicalDeckBuilderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicalDeckBuilderUITests.swift; sourceTree = "<group>"; };
+		46763064299C3326009062F8 /* MagicalDeckBuilderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicalDeckBuilderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4676303B299C3324009062F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46763051299C3326009062F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4676305B299C3326009062F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46763035299C3324009062F8 = {
+			isa = PBXGroup;
+			children = (
+				46763040299C3324009062F8 /* MagicalDeckBuilder */,
+				46763057299C3326009062F8 /* MagicalDeckBuilderTests */,
+				46763061299C3326009062F8 /* MagicalDeckBuilderUITests */,
+				4676303F299C3324009062F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4676303F299C3324009062F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4676303E299C3324009062F8 /* MagicalDeckBuilder.app */,
+				46763054299C3326009062F8 /* MagicalDeckBuilderTests.xctest */,
+				4676305E299C3326009062F8 /* MagicalDeckBuilderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46763040299C3324009062F8 /* MagicalDeckBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				46763041299C3324009062F8 /* AppDelegate.swift */,
+				46763043299C3324009062F8 /* SceneDelegate.swift */,
+				46763045299C3324009062F8 /* ViewController.swift */,
+				46763047299C3324009062F8 /* Main.storyboard */,
+				4676304A299C3326009062F8 /* Assets.xcassets */,
+				4676304C299C3326009062F8 /* LaunchScreen.storyboard */,
+				4676304F299C3326009062F8 /* Info.plist */,
+			);
+			path = MagicalDeckBuilder;
+			sourceTree = "<group>";
+		};
+		46763057299C3326009062F8 /* MagicalDeckBuilderTests */ = {
+			isa = PBXGroup;
+			children = (
+				46763058299C3326009062F8 /* MagicalDeckBuilderTests.swift */,
+			);
+			path = MagicalDeckBuilderTests;
+			sourceTree = "<group>";
+		};
+		46763061299C3326009062F8 /* MagicalDeckBuilderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				46763062299C3326009062F8 /* MagicalDeckBuilderUITests.swift */,
+				46763064299C3326009062F8 /* MagicalDeckBuilderUITestsLaunchTests.swift */,
+			);
+			path = MagicalDeckBuilderUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4676303D299C3324009062F8 /* MagicalDeckBuilder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46763068299C3326009062F8 /* Build configuration list for PBXNativeTarget "MagicalDeckBuilder" */;
+			buildPhases = (
+				4676303A299C3324009062F8 /* Sources */,
+				4676303B299C3324009062F8 /* Frameworks */,
+				4676303C299C3324009062F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MagicalDeckBuilder;
+			productName = MagicalDeckBuilder;
+			productReference = 4676303E299C3324009062F8 /* MagicalDeckBuilder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		46763053299C3326009062F8 /* MagicalDeckBuilderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4676306B299C3326009062F8 /* Build configuration list for PBXNativeTarget "MagicalDeckBuilderTests" */;
+			buildPhases = (
+				46763050299C3326009062F8 /* Sources */,
+				46763051299C3326009062F8 /* Frameworks */,
+				46763052299C3326009062F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46763056299C3326009062F8 /* PBXTargetDependency */,
+			);
+			name = MagicalDeckBuilderTests;
+			productName = MagicalDeckBuilderTests;
+			productReference = 46763054299C3326009062F8 /* MagicalDeckBuilderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4676305D299C3326009062F8 /* MagicalDeckBuilderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4676306E299C3326009062F8 /* Build configuration list for PBXNativeTarget "MagicalDeckBuilderUITests" */;
+			buildPhases = (
+				4676305A299C3326009062F8 /* Sources */,
+				4676305B299C3326009062F8 /* Frameworks */,
+				4676305C299C3326009062F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46763060299C3326009062F8 /* PBXTargetDependency */,
+			);
+			name = MagicalDeckBuilderUITests;
+			productName = MagicalDeckBuilderUITests;
+			productReference = 4676305E299C3326009062F8 /* MagicalDeckBuilderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46763036299C3324009062F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					4676303D299C3324009062F8 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					46763053299C3326009062F8 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 4676303D299C3324009062F8;
+					};
+					4676305D299C3326009062F8 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 4676303D299C3324009062F8;
+					};
+				};
+			};
+			buildConfigurationList = 46763039299C3324009062F8 /* Build configuration list for PBXProject "MagicalDeckBuilder" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46763035299C3324009062F8;
+			productRefGroup = 4676303F299C3324009062F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4676303D299C3324009062F8 /* MagicalDeckBuilder */,
+				46763053299C3326009062F8 /* MagicalDeckBuilderTests */,
+				4676305D299C3326009062F8 /* MagicalDeckBuilderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4676303C299C3324009062F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4676304E299C3326009062F8 /* LaunchScreen.storyboard in Resources */,
+				4676304B299C3326009062F8 /* Assets.xcassets in Resources */,
+				46763049299C3324009062F8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46763052299C3326009062F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4676305C299C3326009062F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4676303A299C3324009062F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46763046299C3324009062F8 /* ViewController.swift in Sources */,
+				46763042299C3324009062F8 /* AppDelegate.swift in Sources */,
+				46763044299C3324009062F8 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46763050299C3326009062F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46763059299C3326009062F8 /* MagicalDeckBuilderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4676305A299C3326009062F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46763065299C3326009062F8 /* MagicalDeckBuilderUITestsLaunchTests.swift in Sources */,
+				46763063299C3326009062F8 /* MagicalDeckBuilderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46763056299C3326009062F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4676303D299C3324009062F8 /* MagicalDeckBuilder */;
+			targetProxy = 46763055299C3326009062F8 /* PBXContainerItemProxy */;
+		};
+		46763060299C3326009062F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4676303D299C3324009062F8 /* MagicalDeckBuilder */;
+			targetProxy = 4676305F299C3326009062F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		46763047299C3324009062F8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46763048299C3324009062F8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4676304C299C3326009062F8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4676304D299C3326009062F8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46763066299C3326009062F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		46763067299C3326009062F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46763069299C3326009062F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MagicalDeckBuilder/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.revangelista.MagicalDeckBuilder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4676306A299C3326009062F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MagicalDeckBuilder/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.revangelista.MagicalDeckBuilder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4676306C299C3326009062F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.revangelista.MagicalDeckBuilderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MagicalDeckBuilder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MagicalDeckBuilder";
+			};
+			name = Debug;
+		};
+		4676306D299C3326009062F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.revangelista.MagicalDeckBuilderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MagicalDeckBuilder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MagicalDeckBuilder";
+			};
+			name = Release;
+		};
+		4676306F299C3326009062F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.revangelista.MagicalDeckBuilderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MagicalDeckBuilder;
+			};
+			name = Debug;
+		};
+		46763070299C3326009062F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.revangelista.MagicalDeckBuilderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MagicalDeckBuilder;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46763039299C3324009062F8 /* Build configuration list for PBXProject "MagicalDeckBuilder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46763066299C3326009062F8 /* Debug */,
+				46763067299C3326009062F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46763068299C3326009062F8 /* Build configuration list for PBXNativeTarget "MagicalDeckBuilder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46763069299C3326009062F8 /* Debug */,
+				4676306A299C3326009062F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4676306B299C3326009062F8 /* Build configuration list for PBXNativeTarget "MagicalDeckBuilderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4676306C299C3326009062F8 /* Debug */,
+				4676306D299C3326009062F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4676306E299C3326009062F8 /* Build configuration list for PBXNativeTarget "MagicalDeckBuilderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4676306F299C3326009062F8 /* Debug */,
+				46763070299C3326009062F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46763036299C3324009062F8 /* Project object */;
+}
