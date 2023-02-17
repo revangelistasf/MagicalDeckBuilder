@@ -7,22 +7,28 @@
 
 import UIKit
 
+protocol Coordinator: AnyObject {
+    var childCoordinators: [Coordinator] { get }
+    func start()
+}
+
 final class AppCoordinator: Coordinator {
-    let window: UIWindow?
+    private(set) var childCoordinators: [Coordinator] = []
+    private let window: UIWindow?
     
-    lazy var rootViewController: UINavigationController = {
-        return UINavigationController(rootViewController: UIViewController())
+    lazy var navigationController: UINavigationController = {
+        return UINavigationController()
     }()
     
     init(window: UIWindow?) {
         self.window = window
     }
     
-    override func start() {
-        guard let window else { return }
-        window.rootViewController = rootViewController
-        window.makeKeyAndVisible()
+    func start() {
+        let deckListCoordinator = DeckListCoordinator(navigationController: navigationController)
+        self.childCoordinators.append(deckListCoordinator)
+        deckListCoordinator.start()
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
     }
-    
-    override func finish() {  }
 }
