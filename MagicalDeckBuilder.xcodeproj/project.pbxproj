@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		466DEE38299EFB900023BE94 /* DeckListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466DEE37299EFB900023BE94 /* DeckListCoordinator.swift */; };
+		466DEE3B299EFE890023BE94 /* DeckListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466DEE3A299EFE890023BE94 /* DeckListViewController.swift */; };
 		46763042299C3324009062F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46763041299C3324009062F8 /* AppDelegate.swift */; };
 		46763044299C3324009062F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46763043299C3324009062F8 /* SceneDelegate.swift */; };
 		4676304B299C3326009062F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4676304A299C3326009062F8 /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		466DEE37299EFB900023BE94 /* DeckListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckListCoordinator.swift; sourceTree = "<group>"; };
+		466DEE3A299EFE890023BE94 /* DeckListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckListViewController.swift; sourceTree = "<group>"; };
 		4676303E299C3324009062F8 /* MagicalDeckBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicalDeckBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46763041299C3324009062F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46763043299C3324009062F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +80,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		466DEE39299EFD940023BE94 /* DeckList */ = {
+			isa = PBXGroup;
+			children = (
+				466DEE37299EFB900023BE94 /* DeckListCoordinator.swift */,
+				466DEE3A299EFE890023BE94 /* DeckListViewController.swift */,
+			);
+			path = DeckList;
+			sourceTree = "<group>";
+		};
 		46763035299C3324009062F8 = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +144,7 @@
 				4676304C299C3326009062F8 /* LaunchScreen.storyboard */,
 				46763074299C4D5C009062F8 /* Coordinator.swift */,
 				46763072299C4A24009062F8 /* AppCoordinator.swift */,
+				466DEE39299EFD940023BE94 /* DeckList */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -266,6 +280,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				46763075299C4D5C009062F8 /* Coordinator.swift in Sources */,
+				466DEE3B299EFE890023BE94 /* DeckListViewController.swift in Sources */,
+				466DEE38299EFB900023BE94 /* DeckListCoordinator.swift in Sources */,
 				46763073299C4A24009062F8 /* AppCoordinator.swift in Sources */,
 				46763042299C3324009062F8 /* AppDelegate.swift in Sources */,
 				46763044299C3324009062F8 /* SceneDelegate.swift in Sources */,
