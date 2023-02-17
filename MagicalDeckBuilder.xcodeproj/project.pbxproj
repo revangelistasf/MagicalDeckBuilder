@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		465CA91229A02B310046EC48 /* DeckListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465CA91129A02B310046EC48 /* DeckListTests.swift */; };
+		465CA91529A03D970046EC48 /* Cartography in Frameworks */ = {isa = PBXBuildFile; productRef = 465CA91429A03D970046EC48 /* Cartography */; };
+		465CA91829A041970046EC48 /* Margins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465CA91729A041970046EC48 /* Margins.swift */; };
 		466DEE38299EFB900023BE94 /* DeckListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466DEE37299EFB900023BE94 /* DeckListCoordinator.swift */; };
 		466DEE3B299EFE890023BE94 /* DeckListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466DEE3A299EFE890023BE94 /* DeckListViewController.swift */; };
 		466DEE3D299EFEFA0023BE94 /* DeckListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466DEE3C299EFEFA0023BE94 /* DeckListViewModel.swift */; };
@@ -18,7 +21,6 @@
 		46763063299C3326009062F8 /* MagicalDeckBuilderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46763062299C3326009062F8 /* MagicalDeckBuilderUITests.swift */; };
 		46763065299C3326009062F8 /* MagicalDeckBuilderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46763064299C3326009062F8 /* MagicalDeckBuilderUITestsLaunchTests.swift */; };
 		46763073299C4A24009062F8 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46763072299C4A24009062F8 /* AppCoordinator.swift */; };
-		46763075299C4D5C009062F8 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46763074299C4D5C009062F8 /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		465CA91129A02B310046EC48 /* DeckListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckListTests.swift; sourceTree = "<group>"; };
+		465CA91729A041970046EC48 /* Margins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Margins.swift; sourceTree = "<group>"; };
 		466DEE37299EFB900023BE94 /* DeckListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckListCoordinator.swift; sourceTree = "<group>"; };
 		466DEE3A299EFE890023BE94 /* DeckListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckListViewController.swift; sourceTree = "<group>"; };
 		466DEE3C299EFEFA0023BE94 /* DeckListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckListViewModel.swift; sourceTree = "<group>"; };
@@ -54,7 +58,6 @@
 		46763062299C3326009062F8 /* MagicalDeckBuilderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicalDeckBuilderUITests.swift; sourceTree = "<group>"; };
 		46763064299C3326009062F8 /* MagicalDeckBuilderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicalDeckBuilderUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		46763072299C4A24009062F8 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		46763074299C4D5C009062F8 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				465CA91529A03D970046EC48 /* Cartography in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		465CA91629A041830046EC48 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				465CA91729A041970046EC48 /* Margins.swift */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		466DEE39299EFD940023BE94 /* DeckList */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +127,7 @@
 		46763040299C3324009062F8 /* MagicalDeckBuilder */ = {
 			isa = PBXGroup;
 			children = (
+				465CA91629A041830046EC48 /* Assets */,
 				46763071299C3714009062F8 /* Scenes */,
 				46763041299C3324009062F8 /* AppDelegate.swift */,
 				46763043299C3324009062F8 /* SceneDelegate.swift */,
@@ -128,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				46763058299C3326009062F8 /* MagicalDeckBuilderTests.swift */,
+				465CA91129A02B310046EC48 /* DeckListTests.swift */,
 			);
 			path = MagicalDeckBuilderTests;
 			sourceTree = "<group>";
@@ -145,7 +159,6 @@
 			isa = PBXGroup;
 			children = (
 				4676304C299C3326009062F8 /* LaunchScreen.storyboard */,
-				46763074299C4D5C009062F8 /* Coordinator.swift */,
 				46763072299C4A24009062F8 /* AppCoordinator.swift */,
 				466DEE39299EFD940023BE94 /* DeckList */,
 			);
@@ -168,6 +181,9 @@
 			dependencies = (
 			);
 			name = MagicalDeckBuilder;
+			packageProductDependencies = (
+				465CA91429A03D970046EC48 /* Cartography */,
+			);
 			productName = MagicalDeckBuilder;
 			productReference = 4676303E299C3324009062F8 /* MagicalDeckBuilder.app */;
 			productType = "com.apple.product-type.application";
@@ -240,6 +256,9 @@
 				Base,
 			);
 			mainGroup = 46763035299C3324009062F8;
+			packageReferences = (
+				465CA91329A03D970046EC48 /* XCRemoteSwiftPackageReference "Cartography" */,
+			);
 			productRefGroup = 4676303F299C3324009062F8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -282,7 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46763075299C4D5C009062F8 /* Coordinator.swift in Sources */,
+				465CA91829A041970046EC48 /* Margins.swift in Sources */,
 				466DEE3D299EFEFA0023BE94 /* DeckListViewModel.swift in Sources */,
 				466DEE3B299EFE890023BE94 /* DeckListViewController.swift in Sources */,
 				466DEE38299EFB900023BE94 /* DeckListCoordinator.swift in Sources */,
@@ -296,6 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				465CA91229A02B310046EC48 /* DeckListTests.swift in Sources */,
 				46763059299C3326009062F8 /* MagicalDeckBuilderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -614,6 +634,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		465CA91329A03D970046EC48 /* XCRemoteSwiftPackageReference "Cartography" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/robb/Cartography.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		465CA91429A03D970046EC48 /* Cartography */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 465CA91329A03D970046EC48 /* XCRemoteSwiftPackageReference "Cartography" */;
+			productName = Cartography;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 46763036299C3324009062F8 /* Project object */;
 }
