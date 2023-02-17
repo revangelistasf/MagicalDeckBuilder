@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - Protocol
 protocol DeckListViewModelProtocol {
-    
+
 }
 
 // MARK: - Class
