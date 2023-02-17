@@ -9,10 +9,12 @@ import Foundation
 
 // MARK: - Protocol
 protocol DeckListViewModelProtocol {
-
+    var title: String { get }
 }
 
 // MARK: - Class
 final class DeckListViewModel: DeckListViewModelProtocol {
+    var title: String = "Cards"
+    
 
 }
