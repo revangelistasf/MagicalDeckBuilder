@@ -1,5 +1,5 @@
 //
-//  Margins.swift
+//  Margin.swift
 //  MagicalDeckBuilder
 //
 //  Created by Roberto Evangelista on 17/02/23.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Margins {
+struct Margin {
     static let extraSmall: CGFloat = 4
     static let small: CGFloat = 8
     static let regular: CGFloat = 12
