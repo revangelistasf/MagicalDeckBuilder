@@ -8,13 +8,46 @@
 import Foundation
 
 // MARK: - Protocol
+protocol DeckListViewModelDelegate: AnyObject {
+    func reloadData()
+}
+
 protocol DeckListViewModelProtocol {
+    var viewDelegate: DeckListViewModelDelegate? { get set }
     var title: String { get }
+    var cards: [Card] { get set }
+    var service: ApiClient { get }
+    func start()
 }
 
 // MARK: - Class
 final class DeckListViewModel: DeckListViewModelProtocol {
-    var title: String = "Cards"
     
-
+    weak var viewDelegate: DeckListViewModelDelegate?
+    
+    var title: String {
+        "Cards"
+    }
+    
+    var cards: [Card] = []
+    
+    var service: ApiClient
+    
+    init(service: ApiClient) {
+        self.service = service
+    }
+    
+    func start() {
+        self.service.fetchCards { result in
+            switch result {
+            case .success(let cards):
+                DispatchQueue.main.async { [weak self] in
+                    self?.cards = cards
+                    self?.viewDelegate?.reloadData()
+                }
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
 }

@@ -9,7 +9,11 @@
 /* Begin PBXBuildFile section */
 		465CA91229A02B310046EC48 /* DeckListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465CA91129A02B310046EC48 /* DeckListTests.swift */; };
 		465CA91529A03D970046EC48 /* Cartography in Frameworks */ = {isa = PBXBuildFile; productRef = 465CA91429A03D970046EC48 /* Cartography */; };
-		465CA91829A041970046EC48 /* Margins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465CA91729A041970046EC48 /* Margins.swift */; };
+		465CA91829A041970046EC48 /* Margin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465CA91729A041970046EC48 /* Margin.swift */; };
+		465CA91B29A11AE10046EC48 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465CA91A29A11AE10046EC48 /* Card.swift */; };
+		465CA91E29A1AED40046EC48 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465CA91D29A1AED40046EC48 /* CardCollectionViewCell.swift */; };
+		465CA92129A1AF5A0046EC48 /* ClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465CA92029A1AF5A0046EC48 /* ClientError.swift */; };
+		465CA92329A1AF730046EC48 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465CA92229A1AF730046EC48 /* ApiClient.swift */; };
 		466DEE38299EFB900023BE94 /* DeckListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466DEE37299EFB900023BE94 /* DeckListCoordinator.swift */; };
 		466DEE3B299EFE890023BE94 /* DeckListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466DEE3A299EFE890023BE94 /* DeckListViewController.swift */; };
 		466DEE3D299EFEFA0023BE94 /* DeckListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466DEE3C299EFEFA0023BE94 /* DeckListViewModel.swift */; };
@@ -42,7 +46,11 @@
 
 /* Begin PBXFileReference section */
 		465CA91129A02B310046EC48 /* DeckListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckListTests.swift; sourceTree = "<group>"; };
-		465CA91729A041970046EC48 /* Margins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Margins.swift; sourceTree = "<group>"; };
+		465CA91729A041970046EC48 /* Margin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Margin.swift; sourceTree = "<group>"; };
+		465CA91A29A11AE10046EC48 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		465CA91D29A1AED40046EC48 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		465CA92029A1AF5A0046EC48 /* ClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientError.swift; sourceTree = "<group>"; };
+		465CA92229A1AF730046EC48 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		466DEE37299EFB900023BE94 /* DeckListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckListCoordinator.swift; sourceTree = "<group>"; };
 		466DEE3A299EFE890023BE94 /* DeckListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckListViewController.swift; sourceTree = "<group>"; };
 		466DEE3C299EFEFA0023BE94 /* DeckListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckListViewModel.swift; sourceTree = "<group>"; };
@@ -89,14 +97,40 @@
 		465CA91629A041830046EC48 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				465CA91729A041970046EC48 /* Margins.swift */,
+				465CA91729A041970046EC48 /* Margin.swift */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		465CA91929A11ACB0046EC48 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				465CA91A29A11AE10046EC48 /* Card.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		465CA91C29A1AECA0046EC48 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				465CA91D29A1AED40046EC48 /* CardCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		465CA91F29A1AF3D0046EC48 /* HttpClient */ = {
+			isa = PBXGroup;
+			children = (
+				465CA92029A1AF5A0046EC48 /* ClientError.swift */,
+				465CA92229A1AF730046EC48 /* ApiClient.swift */,
+			);
+			path = HttpClient;
 			sourceTree = "<group>";
 		};
 		466DEE39299EFD940023BE94 /* DeckList */ = {
 			isa = PBXGroup;
 			children = (
+				465CA91C29A1AECA0046EC48 /* Views */,
 				466DEE37299EFB900023BE94 /* DeckListCoordinator.swift */,
 				466DEE3A299EFE890023BE94 /* DeckListViewController.swift */,
 				466DEE3C299EFEFA0023BE94 /* DeckListViewModel.swift */,
@@ -127,6 +161,7 @@
 		46763040299C3324009062F8 /* MagicalDeckBuilder */ = {
 			isa = PBXGroup;
 			children = (
+				465CA91929A11ACB0046EC48 /* Model */,
 				465CA91629A041830046EC48 /* Assets */,
 				46763071299C3714009062F8 /* Scenes */,
 				46763041299C3324009062F8 /* AppDelegate.swift */,
@@ -158,6 +193,7 @@
 		46763071299C3714009062F8 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				465CA91F29A1AF3D0046EC48 /* HttpClient */,
 				4676304C299C3326009062F8 /* LaunchScreen.storyboard */,
 				46763072299C4A24009062F8 /* AppCoordinator.swift */,
 				466DEE39299EFD940023BE94 /* DeckList */,
@@ -301,13 +337,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				465CA91829A041970046EC48 /* Margins.swift in Sources */,
+				465CA92329A1AF730046EC48 /* ApiClient.swift in Sources */,
+				465CA91829A041970046EC48 /* Margin.swift in Sources */,
 				466DEE3D299EFEFA0023BE94 /* DeckListViewModel.swift in Sources */,
 				466DEE3B299EFE890023BE94 /* DeckListViewController.swift in Sources */,
 				466DEE38299EFB900023BE94 /* DeckListCoordinator.swift in Sources */,
 				46763073299C4A24009062F8 /* AppCoordinator.swift in Sources */,
+				465CA92129A1AF5A0046EC48 /* ClientError.swift in Sources */,
 				46763042299C3324009062F8 /* AppDelegate.swift in Sources */,
 				46763044299C3324009062F8 /* SceneDelegate.swift in Sources */,
+				465CA91E29A1AED40046EC48 /* CardCollectionViewCell.swift in Sources */,
+				465CA91B29A11AE10046EC48 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

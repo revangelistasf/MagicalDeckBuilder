@@ -31,11 +31,13 @@ final class DeckListViewController: UIViewController, DeckListViewControllerProt
     
     override func viewDidLoad() {
         self.configureView()
+        self.viewModel.viewDelegate = self
+        self.viewModel.start()
     }
     
     private func configureView() {
         self.title = viewModel.title
-        configureCollectionView()
+        self.configureCollectionView()
     }
     
     fileprivate func configureCollectionView() {
@@ -50,18 +52,54 @@ final class DeckListViewController: UIViewController, DeckListViewControllerProt
             collectionView.trailing == superView.trailing
             collectionView.bottom == superView.bottom
         }
+        
+        self.collectionView.dataSource = self
+        self.collectionView.delegate = self
+        self.collectionView.register(
+            CardCollectionViewCell.self,
+            forCellWithReuseIdentifier: CardCollectionViewCell.identifier
+        )
     }
     
     private func makeThreeColumnFlowLayout() -> UICollectionViewFlowLayout {
         let viewWidth = self.view.bounds.width
-        let numberOfColumns: CGFloat = 3
+        let numberOfColumns = 3.0
         let numberOfSpacesBetweenColumns = numberOfColumns - 1
-        let paddingForCollectionView = Margins.small * 2
-        let availableWidth = viewWidth - (numberOfSpacesBetweenColumns * Margins.small) - Margins.small * 2
-        let cellWidth = numberOfColumns / availableWidth
+        let availableWidth = viewWidth - (numberOfSpacesBetweenColumns * Margin.small) - Margin.small * 2
+        let cellWidth = availableWidth / numberOfColumns
         
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.itemSize = CGSize(width: cellWidth, height: cellWidth + 40)
         return flowLayout
     }
+}
+
+extension DeckListViewController: DeckListViewModelDelegate {
+    func reloadData() {
+        self.collectionView.reloadData()
+    }
+}
+
+extension DeckListViewController: UICollectionViewDataSource {
+    func collectionView(
+        _ collectionView: UICollectionView,
+        numberOfItemsInSection section: Int
+    ) -> Int {
+        return viewModel.cards.count
+    }
+    
+    func collectionView(
+        _ collectionView: UICollectionView,
+        cellForItemAt indexPath: IndexPath
+    ) -> UICollectionViewCell {
+        let collectionViewCell = collectionView.dequeueReusableCell(
+            withReuseIdentifier: CardCollectionViewCell.identifier,
+            for: indexPath) as! CardCollectionViewCell
+        collectionViewCell.backgroundColor = .purple
+        return collectionViewCell
+    }
+}
+
+extension DeckListViewController: UICollectionViewDelegate {
+    
 }

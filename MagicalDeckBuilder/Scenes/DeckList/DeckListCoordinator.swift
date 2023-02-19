@@ -14,7 +14,7 @@ final class DeckListCoordinator: Coordinator {
     
     // MARK: - VM / VC's
     lazy var deckListViewModel: DeckListViewModelProtocol! = {
-        let viewModel = DeckListViewModel()
+        let viewModel = DeckListViewModel(service: ApiClient())
         return viewModel
     }()
     
@@ -24,9 +24,8 @@ final class DeckListCoordinator: Coordinator {
     }
     
     func start() {
-        let deckListVM: DeckListViewModelProtocol = DeckListViewModel()
         let deckListVC: DeckListViewControllerProtocol = DeckListViewController(
-            viewModel: deckListVM
+            viewModel: self.deckListViewModel
         )
         self.navigationController.setViewControllers([deckListVC], animated: false)
     }
