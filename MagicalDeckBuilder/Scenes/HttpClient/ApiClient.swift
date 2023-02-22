@@ -11,7 +11,7 @@ final class ApiClient {
     
     private let baseUrl = URL(string: "https://api.magicthegathering.io/v1/cards")!
     
-    func fetchCards(completion: @escaping (Result<[Card], ClientError>) -> Void) {
+    func fetchCards(completion: @escaping (Result<[Card], NetworkError>) -> Void) {
         let request = URLRequest(url: baseUrl)
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             if error != nil {
