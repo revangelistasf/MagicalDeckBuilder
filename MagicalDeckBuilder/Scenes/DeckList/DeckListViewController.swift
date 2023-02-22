@@ -18,6 +18,7 @@ final class DeckListViewController: UIViewController, DeckListViewControllerProt
     
     // MARK: - Properties
     var viewModel: DeckListViewModelProtocol
+    let imageLoader = ImageLoader()
     
     // MARK: - Methods
     init(viewModel: DeckListViewModelProtocol) {
@@ -54,7 +55,6 @@ final class DeckListViewController: UIViewController, DeckListViewControllerProt
         }
         
         self.collectionView.dataSource = self
-        self.collectionView.delegate = self
         self.collectionView.register(
             CardCollectionViewCell.self,
             forCellWithReuseIdentifier: CardCollectionViewCell.identifier
@@ -92,14 +92,12 @@ extension DeckListViewController: UICollectionViewDataSource {
         _ collectionView: UICollectionView,
         cellForItemAt indexPath: IndexPath
     ) -> UICollectionViewCell {
-        let collectionViewCell = collectionView.dequeueReusableCell(
+        let cardCollectionViewCell = collectionView.dequeueReusableCell(
             withReuseIdentifier: CardCollectionViewCell.identifier,
-            for: indexPath) as! CardCollectionViewCell
-        collectionViewCell.backgroundColor = .purple
-        return collectionViewCell
+            for: indexPath
+        ) as! CardCollectionViewCell
+        
+        cardCollectionViewCell.setupCell(with: viewModel.cardViewModel(at: indexPath))
+        return cardCollectionViewCell
     }
-}
-
-extension DeckListViewController: UICollectionViewDelegate {
-    
 }

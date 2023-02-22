@@ -8,11 +8,17 @@
 import UIKit
 import Cartography
 
+struct CardCollectionViewModel {
+    let imageUrlString: String
+}
+
 class CardCollectionViewCell: UICollectionViewCell {
     var cardImageView: UIImageView = {
         let imageView = UIImageView()
         return imageView
     }()
+    
+    var onReuse: () -> Void = { }
     
     static let identifier = String(describing: CardCollectionViewCell.self)
     
@@ -29,5 +35,22 @@ class CardCollectionViewCell: UICollectionViewCell {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        self.cardImageView.image = nil
+        self.cardImageView.contentMode = .scaleAspectFit
+        self.cardImageView.cancelImageLoad()
+    }
+    
+    func setupCell(with viewModel: CardCollectionViewModel) {
+        if let imageUrl = URL(string: viewModel.imageUrlString) {
+            self.cardImageView.loadImage(at: imageUrl)
+        } else {
+            self.cardImageView.image = UIImage(systemName: "photo.fill")!
+            self.cardImageView.contentMode = .center
+        }
+        
     }
 }

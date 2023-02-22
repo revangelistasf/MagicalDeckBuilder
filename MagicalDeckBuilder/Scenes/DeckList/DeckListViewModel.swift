@@ -18,11 +18,11 @@ protocol DeckListViewModelProtocol {
     var cards: [Card] { get set }
     var service: ApiClient { get }
     func start()
+    func cardViewModel(at indexPath: IndexPath) -> CardCollectionViewModel
 }
 
 // MARK: - Class
 final class DeckListViewModel: DeckListViewModelProtocol {
-    
     weak var viewDelegate: DeckListViewModelDelegate?
     
     var title: String {
@@ -31,7 +31,7 @@ final class DeckListViewModel: DeckListViewModelProtocol {
     
     var cards: [Card] = []
     
-    var service: ApiClient
+    let service: ApiClient
     
     init(service: ApiClient) {
         self.service = service
@@ -49,5 +49,10 @@ final class DeckListViewModel: DeckListViewModelProtocol {
                 print(error)
             }
         }
+    }
+    
+    func cardViewModel(at indexPath: IndexPath) -> CardCollectionViewModel {
+        let card = cards[indexPath.row]
+        return CardCollectionViewModel(imageUrlString: card.imageUrl ?? "")
     }
 }
