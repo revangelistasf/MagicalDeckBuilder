@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		461A444629A593AE009761D7 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 461A444529A593AE009761D7 /* Launch Screen.storyboard */; };
+		465AE83C29A4418F00910528 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465AE83B29A4418F00910528 /* ImageLoader.swift */; };
+		465AE83F29A586FE00910528 /* UIImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465AE83E29A586FE00910528 /* UIImageLoader.swift */; };
+		465AE84329A5905200910528 /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465AE84229A5905200910528 /* UIImageView+Ext.swift */; };
 		465CA91229A02B310046EC48 /* DeckListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465CA91129A02B310046EC48 /* DeckListTests.swift */; };
 		465CA91529A03D970046EC48 /* Cartography in Frameworks */ = {isa = PBXBuildFile; productRef = 465CA91429A03D970046EC48 /* Cartography */; };
 		465CA91829A041970046EC48 /* Margin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465CA91729A041970046EC48 /* Margin.swift */; };
 		465CA91B29A11AE10046EC48 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465CA91A29A11AE10046EC48 /* Card.swift */; };
 		465CA91E29A1AED40046EC48 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465CA91D29A1AED40046EC48 /* CardCollectionViewCell.swift */; };
-		465CA92129A1AF5A0046EC48 /* ClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465CA92029A1AF5A0046EC48 /* ClientError.swift */; };
+		465CA92129A1AF5A0046EC48 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465CA92029A1AF5A0046EC48 /* NetworkError.swift */; };
 		465CA92329A1AF730046EC48 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465CA92229A1AF730046EC48 /* ApiClient.swift */; };
 		466DEE38299EFB900023BE94 /* DeckListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466DEE37299EFB900023BE94 /* DeckListCoordinator.swift */; };
 		466DEE3B299EFE890023BE94 /* DeckListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466DEE3A299EFE890023BE94 /* DeckListViewController.swift */; };
@@ -20,7 +24,6 @@
 		46763042299C3324009062F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46763041299C3324009062F8 /* AppDelegate.swift */; };
 		46763044299C3324009062F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46763043299C3324009062F8 /* SceneDelegate.swift */; };
 		4676304B299C3326009062F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4676304A299C3326009062F8 /* Assets.xcassets */; };
-		4676304E299C3326009062F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4676304C299C3326009062F8 /* LaunchScreen.storyboard */; };
 		46763059299C3326009062F8 /* MagicalDeckBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46763058299C3326009062F8 /* MagicalDeckBuilderTests.swift */; };
 		46763063299C3326009062F8 /* MagicalDeckBuilderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46763062299C3326009062F8 /* MagicalDeckBuilderUITests.swift */; };
 		46763065299C3326009062F8 /* MagicalDeckBuilderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46763064299C3326009062F8 /* MagicalDeckBuilderUITestsLaunchTests.swift */; };
@@ -45,11 +48,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		461A444529A593AE009761D7 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		465AE83B29A4418F00910528 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		465AE83E29A586FE00910528 /* UIImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageLoader.swift; sourceTree = "<group>"; };
+		465AE84229A5905200910528 /* UIImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
 		465CA91129A02B310046EC48 /* DeckListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckListTests.swift; sourceTree = "<group>"; };
 		465CA91729A041970046EC48 /* Margin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Margin.swift; sourceTree = "<group>"; };
 		465CA91A29A11AE10046EC48 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		465CA91D29A1AED40046EC48 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
-		465CA92029A1AF5A0046EC48 /* ClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientError.swift; sourceTree = "<group>"; };
+		465CA92029A1AF5A0046EC48 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		465CA92229A1AF730046EC48 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		466DEE37299EFB900023BE94 /* DeckListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckListCoordinator.swift; sourceTree = "<group>"; };
 		466DEE3A299EFE890023BE94 /* DeckListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckListViewController.swift; sourceTree = "<group>"; };
@@ -58,7 +65,6 @@
 		46763041299C3324009062F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46763043299C3324009062F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4676304A299C3326009062F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4676304D299C3326009062F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4676304F299C3326009062F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46763054299C3326009062F8 /* MagicalDeckBuilderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicalDeckBuilderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46763058299C3326009062F8 /* MagicalDeckBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicalDeckBuilderTests.swift; sourceTree = "<group>"; };
@@ -94,6 +100,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		465AE83D29A586E800910528 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				465AE84129A5904400910528 /* Extensions */,
+				465AE84029A5903C00910528 /* Helpers */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		465AE84029A5903C00910528 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				465AE83E29A586FE00910528 /* UIImageLoader.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		465AE84129A5904400910528 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				465AE84229A5905200910528 /* UIImageView+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		465CA91629A041830046EC48 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,8 +152,9 @@
 		465CA91F29A1AF3D0046EC48 /* HttpClient */ = {
 			isa = PBXGroup;
 			children = (
-				465CA92029A1AF5A0046EC48 /* ClientError.swift */,
+				465CA92029A1AF5A0046EC48 /* NetworkError.swift */,
 				465CA92229A1AF730046EC48 /* ApiClient.swift */,
+				465AE83B29A4418F00910528 /* ImageLoader.swift */,
 			);
 			path = HttpClient;
 			sourceTree = "<group>";
@@ -161,13 +193,14 @@
 		46763040299C3324009062F8 /* MagicalDeckBuilder */ = {
 			isa = PBXGroup;
 			children = (
-				465CA91929A11ACB0046EC48 /* Model */,
-				465CA91629A041830046EC48 /* Assets */,
-				46763071299C3714009062F8 /* Scenes */,
+				4676304F299C3326009062F8 /* Info.plist */,
 				46763041299C3324009062F8 /* AppDelegate.swift */,
 				46763043299C3324009062F8 /* SceneDelegate.swift */,
 				4676304A299C3326009062F8 /* Assets.xcassets */,
-				4676304F299C3326009062F8 /* Info.plist */,
+				461A444529A593AE009761D7 /* Launch Screen.storyboard */,
+				465CA91629A041830046EC48 /* Assets */,
+				465CA91929A11ACB0046EC48 /* Model */,
+				46763071299C3714009062F8 /* Scenes */,
 			);
 			path = MagicalDeckBuilder;
 			sourceTree = "<group>";
@@ -193,10 +226,10 @@
 		46763071299C3714009062F8 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				465CA91F29A1AF3D0046EC48 /* HttpClient */,
-				4676304C299C3326009062F8 /* LaunchScreen.storyboard */,
 				46763072299C4A24009062F8 /* AppCoordinator.swift */,
 				466DEE39299EFD940023BE94 /* DeckList */,
+				465CA91F29A1AF3D0046EC48 /* HttpClient */,
+				465AE83D29A586E800910528 /* Shared */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -311,7 +344,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4676304E299C3326009062F8 /* LaunchScreen.storyboard in Resources */,
+				461A444629A593AE009761D7 /* Launch Screen.storyboard in Resources */,
 				4676304B299C3326009062F8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,11 +372,14 @@
 			files = (
 				465CA92329A1AF730046EC48 /* ApiClient.swift in Sources */,
 				465CA91829A041970046EC48 /* Margin.swift in Sources */,
+				465AE83C29A4418F00910528 /* ImageLoader.swift in Sources */,
 				466DEE3D299EFEFA0023BE94 /* DeckListViewModel.swift in Sources */,
 				466DEE3B299EFE890023BE94 /* DeckListViewController.swift in Sources */,
 				466DEE38299EFB900023BE94 /* DeckListCoordinator.swift in Sources */,
+				465AE84329A5905200910528 /* UIImageView+Ext.swift in Sources */,
 				46763073299C4A24009062F8 /* AppCoordinator.swift in Sources */,
-				465CA92129A1AF5A0046EC48 /* ClientError.swift in Sources */,
+				465AE83F29A586FE00910528 /* UIImageLoader.swift in Sources */,
+				465CA92129A1AF5A0046EC48 /* NetworkError.swift in Sources */,
 				46763042299C3324009062F8 /* AppDelegate.swift in Sources */,
 				46763044299C3324009062F8 /* SceneDelegate.swift in Sources */,
 				465CA91E29A1AED40046EC48 /* CardCollectionViewCell.swift in Sources */,
@@ -383,17 +419,6 @@
 			targetProxy = 4676305F299C3326009062F8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		4676304C299C3326009062F8 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4676304D299C3326009062F8 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		46763066299C3326009062F8 /* Debug */ = {
